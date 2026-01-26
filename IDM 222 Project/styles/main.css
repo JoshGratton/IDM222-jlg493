@@ -1,0 +1,203 @@
+ /* CSS STYLES
+           Main Palette:
+           Background: #001825
+           Accent: #0038FF
+           Containers: #FFFFFF
+        */
+
+        :root {
+            --primary-bg: #001825;
+            --accent-blue: #0038FF;
+            --white: #FFFFFF;
+            --text-light: #FFFFFF;
+            --text-dark: #001825;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f9;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: var(--primary-bg);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: var(--text-light);
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Hero & Content Sections */
+        .section-split {
+            display: flex;
+            /* Stretch ensures both children (text box and image box) are equal height */
+            align-items: stretch;
+            min-height: 500px;
+            overflow: hidden;
+        }
+
+        /* Alternate layout for the second split section */
+        .section-split.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .section-content {
+            flex: 1;
+            padding: 4rem 10%;
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .section-image {
+            flex: 1;
+            background-color: #ddd;
+            display: flex;
+        }
+
+        .section-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block; /* Removes bottom whitespace gap */
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #002bc5;
+            transform: translateY(-2px);
+        }
+
+        /* Blue Gallery Box Section */
+        .gallery-box {
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .gallery-box h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            background-color: var(--white);
+            aspect-ratio: 1/1;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left {
+            flex: 1;
+        }
+
+        .footer-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .footer-img-placeholder {
+            width: 150px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px dashed white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-split, .section-split.reverse {
+                flex-direction: column;
+            }
+            .section-image {
+                min-height: 300px;
+            }
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            nav ul {
+                display: none;
+            }
+        }
