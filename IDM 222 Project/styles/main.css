@@ -1,5 +1,5 @@
- /* CSS STYLES
-           Main Palette:
+ /* CSS for the site
+           Colors for the site?:
            Background: #001825
            Accent: #0038FF
            Containers: #FFFFFF
@@ -26,7 +26,7 @@
             line-height: 1.6;
         }
 
-        /* Navigation Bar */
+        /* Navigation bar stuff */
         nav {
             background-color: var(--primary-bg);
             padding: 1rem 5%;
@@ -63,16 +63,15 @@
             color: var(--accent-blue);
         }
 
-        /* Hero & Content Sections */
+        /* All the content sections */
         .section-split {
             display: flex;
-            /* Stretch ensures both children (text box and image box) are equal height */
             align-items: stretch;
             min-height: 500px;
             overflow: hidden;
         }
 
-        /* Alternate layout for the second split section */
+        /* This is like the reverse layout if needed */
         .section-split.reverse {
             flex-direction: row-reverse;
         }
@@ -98,10 +97,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            display: block; /* Removes bottom whitespace gap */
+            display: block;
         }
 
-        /* Buttons */
+        /* all the button designs */
         .btn {
             display: inline-block;
             margin-top: 1.5rem;
@@ -119,7 +118,7 @@
             transform: translateY(-2px);
         }
 
-        /* Blue Gallery Box Section */
+        /* this is for the section that shows off my projects */
         .gallery-box {
             background-color: var(--accent-blue);
             color: var(--white);
@@ -156,7 +155,7 @@
             object-fit: cover;
         }
 
-        /* Footer */
+        /* all the footer stuff */
         footer {
             background-color: var(--primary-bg);
             color: var(--text-light);
@@ -186,7 +185,7 @@
             align-items: center;
         }
 
-        /* Responsive Design */
+        /* This should hopefully make it responsive */
         @media (max-width: 768px) {
             .section-split, .section-split.reverse {
                 flex-direction: column;
