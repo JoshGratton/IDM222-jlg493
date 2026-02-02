@@ -1,0 +1,195 @@
+ /* Css thats the same as home page */
+        :root {
+            --primary-bg: #001825;
+            --accent-blue: #0038FF;
+            --white: #FFFFFF;
+            --text-light: #FFFFFF;
+            --text-dark: #001825;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f9;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Nav Bar (should be same as home page */
+        nav {
+            background-color: var(--primary-bg);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: var(--text-light);
+            font-weight: 800;
+            font-size: 1.6rem;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Layout for aboutme */
+        header.page-header {
+            background-color: var(--primary-bg);
+            padding: 4rem 8% 2rem;
+            color: var(--white);
+            text-align: left;
+        }
+
+        header.page-header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        /* image left, text right */
+        .intro-section {
+            display: flex;
+            background-color: var(--primary-bg);
+            color: var(--white);
+            align-items: center;
+            padding: 2rem 8% 6rem;
+        }
+
+        .intro-image {
+            flex: 1;
+            padding-right: 4%;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 2px;
+        }
+
+        .intro-text {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .intro-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        /* mission section */
+        .mission-section {
+            background-color: var(--white);
+            padding: 6rem 8%;
+            color: var(--text-dark);
+        }
+
+        .mission-section h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .mission-grid p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--accent-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            align-self: flex-start; 
+        }
+
+        .btn:hover {
+            background-color: #002bc5;
+            box-shadow: 0 10px 20px rgba(0, 56, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        /* Footer, should be same as home page */
+        footer {
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+            padding: 4rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-left h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-left p {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        .footer-right .logo-box {
+            width: 120px;
+            height: 60px;
+            border: 2px solid var(--accent-blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive stuff */
+        @media (max-width: 900px) {
+            header.page-header h1 { font-size: 3rem; }
+            .intro-section { flex-direction: column; }
+            .intro-image { padding-right: 0; margin-bottom: 2rem; }
+            .mission-grid { grid-template-columns: 1fr; gap: 2rem; }
+            footer { flex-direction: column; text-align: center; gap: 2rem; }
+        }

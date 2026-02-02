@@ -3,16 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - IDM 222 Project</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <title>Project Detail | J. Gratton</title>
 </head>
 <body>
-    <div style="width: 1280px; height: 90px; position: relative">
-  <div style="width: 1280px; height: 90px; left: 0px; top: 0px; position: absolute; background: #001825"></div>
-  <div style="left: 364px; top: 36px; position: absolute; color: white; font-size: 32px; font-family: Inter; font-weight: 300; word-wrap: break-word">Home</div>
-  <div style="left: 87px; top: 36px; position: absolute; color: white; font-size: 32px; font-family: Inter; font-weight: 300; word-wrap: break-word">j.gratton</div>
-  <div style="left: 480px; top: 36px; position: absolute; color: white; font-size: 32px; font-family: Inter; font-weight: 300; word-wrap: break-word">About Me</div>
-  <div style="left: 661px; top: 36px; position: absolute; color: white; font-size: 32px; font-family: Inter; font-weight: 300; word-wrap: break-word">Portfolio</div>
-  <div style="left: 824px; top: 36px; position: absolute ; color:white ; font-size :32 px ;font-family :Inter ;font-weight :300 ;word-wrap :break-word">Blog</div>
-</div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">J. GRATTON</a>
+        <ul>
+            <li><a href="Homee.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="project-header">
+        <h1>Project Title Alpha</h1>
+        
+        <div class="intro-grid">
+            <!-- Left Side: 3 Sections -->
+            <div class="intro-left">
+                <div class="para-group">
+                    <h3>The Vision</h3>
+                    <p>This project began as a challenge to redefine how users interact with minimalist data sets. The goal was to eliminate noise while maintaining high functional density across all platforms.</p>
+                </div>
+                
+                <div class="para-group">
+                    <h3>The Approach</h3>
+                    <p>Utilizing a component-based architecture, we focused on modularity and speed. Every asset was optimized for sub-second load times without compromising the bold visual identity established in the brand guide.</p>
+                </div>
+
+                <div class="para-group">
+                    <h3>The Result</h3>
+                    <p>The final application saw a 40% increase in user retention during beta testing. Its high-contrast interface became a hallmark of the design system, proving that dark themes can be both accessible and professional.</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Explanation -->
+            <div class="intro-right">
+                <p>Beyond the technical specifications, this project represents a shift toward more intentional digital experiences. By integrating custom CSS grids with dynamic data rendering, we created a tool that feels organic to the user's workflow. The secondary explanation here covers the broader impact of the work on the client's ecosystem and the future-proofing measures implemented during development.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Showcase Section: Alternating Layout -->
+    <section class="showcase">
+        
+        <!-- Part 1: Image Left, Text Right -->
+        <div class="showcase-item">
+            <div class="showcase-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=800&q=80" alt="Showcase 1">
+            </div>
+            <div class="showcase-text">
+                <p>Our initial wireframes focused on the flow of information. We wanted the user to feel guided by the typography, using size and weight to establish a clear hierarchy of importance from the very first click.</p>
+            </div>
+        </div>
+
+        <!-- Part 2: Text Left, Image Right (Flipped) -->
+        <div class="showcase-item reverse">
+            <div class="showcase-image">
+                <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=800&q=80" alt="Showcase 2">
+            </div>
+            <div class="showcase-text">
+                <p>The technical implementation relied heavily on CSS Grid and Flexbox to ensure that the layout remained symmetrical across ultra-wide monitors and mobile devices alike, maintaining the signature zigzag rhythm.</p>
+            </div>
+        </div>
+
+        <!-- Part 3: Image Left, Text Right -->
+        <div class="showcase-item">
+            <div class="showcase-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Showcase 3">
+            </div>
+            <div class="showcase-text">
+                <p>Data visualization was a key component of this project. We developed custom SVG charts that inherit the brand's primary and accent colors, ensuring the analytics felt like an integrated part of the design.</p>
+            </div>
+        </div>
+
+        <!-- Part 4: Text Left, Image Right (Flipped) -->
+        <div class="showcase-item reverse">
+            <div class="showcase-image">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Showcase 4">
+            </div>
+            <div class="showcase-text">
+                <p>The final testing phase involved rigorous accessibility audits. By using high-contrast colors like our signature blue against the navy background, we ensured all content passed WCAG 2.1 AA standards for readability.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <h3>Contact</h3>
+            <p>© 2024 J. Gratton. Built for Performance.</p>
+        </div>
+        <div class="footer-right">
+            <div class="logo-box">
+                J.G.
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
