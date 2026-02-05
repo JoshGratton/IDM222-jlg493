@@ -121,37 +121,34 @@
             font-style: italic;
         }
 
-        /* Footer (Identical to other pages) */
+        /* all the footer stuff */
         footer {
             background-color: var(--primary-bg);
             color: var(--text-light);
-            padding: 4rem 5%;
+            padding: 3rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            width: 100%;
         }
 
-        .footer-left h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+        .footer-left {
+            flex: 1;
         }
 
-        .footer-left p {
-            opacity: 0.6;
-            font-size: 0.9rem;
+        .footer-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
         }
 
-        .footer-right .logo-box {
-            width: 120px;
-            height: 60px;
-            border: 2px solid var(--accent-blue);
+        .footer-img-placeholder {
+            width: 150px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px dashed white;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-weight: bold;
-            letter-spacing: 1px;
         }
 
         /* Responsive */
