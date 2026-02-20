@@ -140,7 +140,7 @@
             opacity: 0.85;
         }
 
-         /* all the footer stuff */
+         /* footer stuff */
         footer {
             background-color: var(--primary-bg);
             color: var(--text-light);
@@ -150,21 +150,20 @@
             align-items: center;
         }
 
-        .footer-left {
+        .footer {
             flex: 1;
         }
 
-        .footer-right {
+        .footerimage {
             flex: 1;
             display: flex;
             justify-content: flex-end;
         }
 
-        .footer-img-placeholder {
+        .footerimagee {
             width: 150px;
             height: 100px;
             background-color: rgba(255, 255, 255, 0.1);
-            border: 1px dashed white;
             display: flex;
             justify-content: center;
             align-items: center;
