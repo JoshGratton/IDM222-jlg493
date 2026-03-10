@@ -136,7 +136,7 @@
 
         .grid-item {
             background-color: var(--white);
-            aspect-ratio: 1/1;
+            aspect-ratio: 1 / 1;
             border-radius: 8px;
             display: flex;
             justify-content: center;

@@ -1,4 +1,4 @@
- /* Css thats the same as home page */
+ 
         :root {
             --primary-bg: #001825;
             --accent-blue: #0038FF;
@@ -20,7 +20,7 @@
             line-height: 1.6;
         }
 
-        /* Nav Bar (should be same as home page */
+        
          nav {
             background-color: var(--primary-bg);
             padding: 1rem 5%;
@@ -57,7 +57,7 @@
             color: var(--accent-blue);
         }
 
-        /* Layout for aboutme */
+       
         header.page-header {
             background-color: var(--primary-bg);
             padding: 4rem 8% 2rem;
@@ -71,7 +71,7 @@
             letter-spacing: -1px;
         }
 
-        /* image left, text right */
+        
         .intro-section {
             display: flex;
             background-color: var(--primary-bg);
@@ -105,7 +105,7 @@
             opacity: 0.9;
         }
 
-        /* mission section */
+        
         .mission-section {
             background-color: var(--white);
             padding: 6rem 8%;
@@ -130,7 +130,7 @@
             line-height: 1.8;
         }
 
-        /* Buttons */
+        
         .btn {
             display: inline-block;
             padding: 1rem 2.5rem;
@@ -151,7 +151,7 @@
             transform: translateY(-3px);
         }
 
-         /* all the footer stuff */
+         
         footer {
             background-color: var(--primary-bg);
             color: var(--text-light);
@@ -180,7 +180,7 @@
             align-items: center;
         }
 
-        /* Responsive stuff */
+        
         @media (max-width: 900px) {
             header.page-header h1 { font-size: 3rem; }
             .intro-section { flex-direction: column; }

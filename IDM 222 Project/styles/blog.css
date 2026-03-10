@@ -1,5 +1,5 @@
 
-        /* Shared CSS from Portfolio Base */
+        
         :root {
             --primary-bg: #001825;
             --accent-blue: #0038FF;
@@ -16,12 +16,12 @@
         }
 
         body {
-            background-color: var(--primary-bg); /* Changed to dark blue */
+            background-color: var(--primary-bg);
             color: var(--text-light);
             line-height: 1.6;
         }
 
-        /* Navigation Bar */
+        
          nav {
             background-color: var(--primary-bg);
             padding: 1rem 5%;
@@ -58,7 +58,7 @@
             color: var(--accent-blue);
         }
 
-        /* Page Header */
+        
         header.blog-header {
             padding: 5rem 5% 3rem;
             text-align: center;
@@ -67,11 +67,11 @@
         header.blog-header h1 {
             font-size: 3.5rem;
             text-transform: uppercase;
-            color: var(--text-light); /* Changed to white */
+            color: var(--text-light); 
             letter-spacing: -1px;
         }
 
-        /* Blog Post Container & Cards */
+        
         .blog-container {
             max-width: 800px;
             margin: 0 auto 6rem;
@@ -87,7 +87,7 @@
             display: flex;
             flex-direction: column;
             text-align: left;
-            color: var(--text-dark); /* Keeps text inside box readable */
+            color: var(--text-dark); 
         }
 
         .post-meta-top {
@@ -118,7 +118,7 @@
             font-style: italic;
         }
 
-        /* all the footer stuff */
+        
         footer {
             background-color: var(--primary-bg);
             color: var(--text-light);
@@ -147,7 +147,7 @@
             align-items: center;
         }
 
-        /* Responsive */
+        
         @media (max-width: 768px) {
             header.blog-header h1 { font-size: 2.5rem; }
             .post-box { padding: 1.5rem; }

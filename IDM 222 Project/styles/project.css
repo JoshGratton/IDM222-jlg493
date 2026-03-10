@@ -1,4 +1,4 @@
- /* Ssame CSS from Portfolio Base */
+
         :root {
             --primary-bg: #001825;
             --accent-blue: #0038FF;
@@ -20,7 +20,7 @@
             line-height: 1.6;
         }
 
-        /* Navigation Bar */
+       
          nav {
             background-color: var(--primary-bg);
             padding: 1rem 5%;
@@ -57,7 +57,7 @@
             color: var(--accent-blue);
         }
 
-        /* Project Intro Layout */
+        
         .project-header {
             padding: 6rem 8% 2rem;
         }
@@ -76,11 +76,11 @@
             margin-bottom: 6rem;
         }
 
-        /* Left side content */
+       
         .intro-left h3 {
             font-size: 1.2rem;
             text-transform: uppercase;
-            color: var(--white); /* Changed from var(--accent-blue) to white */
+            color: var(--white);
             margin-bottom: 0.5rem;
             letter-spacing: 1px;
             font-weight: 700;
@@ -93,7 +93,7 @@
             max-width: 600px;
         }
 
-        /* Right side content */
+        
         .intro-right {
             border-left: 1px solid rgba(255,255,255,0.1);
             padding-left: 2rem;
@@ -105,7 +105,7 @@
             opacity: 0.9;
         }
 
-        /* Showcase Section (Alternating) */
+        
         .showcase-item {
             display: flex;
             align-items: center;
@@ -140,7 +140,7 @@
             opacity: 0.85;
         }
 
-         /* footer stuff */
+        
         footer {
             background-color: var(--primary-bg);
             color: var(--text-light);
@@ -169,7 +169,7 @@
             align-items: center;
         }
 
-        /* Responsive */
+        
         @media (max-width: 900px) {
             .intro-grid { grid-template-columns: 1fr; }
             .intro-right { border-left: none; padding-left: 0; margin-top: 2rem; }
